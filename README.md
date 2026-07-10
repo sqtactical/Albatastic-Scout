@@ -22,7 +22,7 @@
 
 ## 📐 Vista del Diseño
 
-A continuación se muestra el render de la PCB (referenciado en el archivo original como `image_099cfc.png`), donde se puede apreciar la distribución alargada equivalente a 3 placas *Compact* de ancho, optimizando el espacio para el módulo solar y el portabaterías trasero:
+A continuación se muestra el render de la PCB, donde se puede apreciar la distribución alargada equivalente a 3 placas *Compact* de ancho, optimizando el espacio para el módulo solar y el portabaterías trasero:
 
 <p align="center">
   <img width="500" alt="Albatastic Scout PCB Render" src="https://github.com/user-attachments/assets/ff0325e0-aca7-458b-9571-c9f083cb64d4" />
