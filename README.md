@@ -27,6 +27,7 @@
 
 ### 🟢 v1.1 - Por testear
 * **Corregido:** Corregido que la salida del CN3791 no estaba conectada.
+* **Corregido:** El E28 no estaba conectado a 3.3V
 * **Añadido:** Añadido opción de buck-boost de 3.3V/5V para el E22P/E28.
 * **Añadido:** Selector de alimentación para el E28 (Pro micro para QRP, Buck-Boost para potencia máxima).
 
