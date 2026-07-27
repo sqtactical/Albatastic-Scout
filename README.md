@@ -68,10 +68,11 @@ Sigue estos pasos para seleccionar los componentes según la configuración de t
 | **Opción C (E22/E22P)** | **Boost 5V 3A** | Opción para alimentar el E22/E22P a 5V | [🛒 Comprar](https://es.aliexpress.com/item/1005007013856492.html) |
 | **Opción D (E22/E22P)** | **HW-085** | Opción mini para alimentar el E22 a 5V respectivamente | [🛒 Comprar](https://es.aliexpress.com/item/1005008051438437.html) |
 
+*(Enlaces no afiliados)*
+
 ---
 
 
-**Enlaces no afiliados**
 <details>
 <summary><b>📋 Historial de Cambios (Changelog)</b></summary>
 
