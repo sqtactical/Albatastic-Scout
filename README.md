@@ -1,7 +1,7 @@
 # 🛰️ Albatastic Scout
 ### PCB compacta para nodos solares sencillos y clientes de despliegue rápido
 
-**Albatastic Scout** es una placa *barebones* de la familia Albatastic diseñada específicamente para actuar como nodo cliente autónomo o baliza temporal (ideal para acampadas y exteriores). Su diseño estilizado optimiza el espacio para albergar una gran capacidad de energía y compatibilidad de radio sin añadir florituras.
+**Albatastic Scout** es una placa *barebones* de la familia Albatastic diseñada específicamente para actuar como nodo cliente solar sencillo, ideal para clientes sencillos y/o nodos temporales (Acampadas, camping, cruceros, etc). Su diseño estilizado optimiza el espacio para albergar una gran capacidad de energía y compatibilidad de radio sin añadir florituras.
 
 ---
 
@@ -33,6 +33,8 @@ Estos componentes son necesarios independientemente de la configuración elegida
 | **Protección Batería** | Circuito BMS 1S | 1 | [🛒 Comprar](https://es.aliexpress.com/item/1005008217119006.html) | Módulo de protección contra sobrecarga/sobredescarga |
 | **Interruptor** | Interruptor Encendido/Apagado | 1 | [🛒 Comprar](https://es.aliexpress.com/item/1005006143122311.html) | Interruptor general de encendido |
 | **Resistencias 1206** | 1x 680K 1x 1M (o 2x 1M) | 2 | [🛒 Comprar](https://es.aliexpress.com/item/1005002991902748.html) | Resistencias para monitorear el nivel de la batería |
+| **Botón reset** | Botón de reset | 1 | [🛒 Comprar](https://es.aliexpress.com/item/4001125532910.html) | Resistencias para monitorear el nivel de la batería |
+| **Baterías 18650** | Baterías 18650 | 2 | [🛒 Comprar](https://www.nkon.nl/es/) | Recomiendo usar baterías nuevas y de calidad  |
 
 
 ---
@@ -45,10 +47,10 @@ Sigue estos pasos para seleccionar los componentes según la configuración de t
 
 | Opción | Módulo | Descripción / Características | Enlace de Compra |
 | :--- | :--- | :--- | :---: |
-| **Opción A** | **E22P** | Semtech SX1262 / SX1268. Recomendado para enlaces de muy largo alcance y máxima potencia LoRa. | [🛒 Comprar](https://es.aliexpress.com/item/1005010297548005.html) |
-| **Opción B** | **E22** | Semtech SX1262 / SX1268. Recomendado para enlaces de muy largo alcance y máxima potencia LoRa. Sin filtros integrados | [🛒 Comprar](https://es.aliexpress.com/item/1005009741346732.html) |
+| **Opción A** | **E22P** | Semtech SX1262 / SX1268. Recomendado para enlaces de muy largo alcance y máxima potencia LoRa. Disponible en 433, 868 y 915 | [🛒 Comprar](https://es.aliexpress.com/item/1005010297548005.html) |
+| **Opción B** | **E22** | Semtech SX1262 / SX1268. Sin filtros integrados, disponible en más bandas | [🛒 Comprar](https://es.aliexpress.com/item/1005009741346732.html) |
 | **Opción C** | **E80** | Módulo LoRa de bajo consumo de 433/868 y 2.4GHz | [🛒 Comprar](https://es.aliexpress.com/item/1005009119868850.html) |
-| **Opción D** | **E28** | Módulo LoRa de 2.4GHz Ideal para alta velocidad de transmisión o redes locales. | [🛒 Comprar](https://es.aliexpress.com/item/1005010288386483.html) |
+| **Opción D** | **E28** | Módulo LoRa de 2.4GHz. Ideal para alta velocidad de transmisión o redes locales. | [🛒 Comprar](https://es.aliexpress.com/item/1005010288386483.html) |
 | **Opción E** | **HT-RA62** | Módulo compacto basado en SX1262. | [🛒 Comprar](https://es.aliexpress.com/item/1005008363549136.html) |
 
 #### 2️⃣ **Paso 2: Elige el Cargador Solar (MPPT)** *(Selecciona 1)*
@@ -105,4 +107,4 @@ A continuación se muestra el render de la PCB, donde se puede apreciar la distr
 
 ---
 
-> 💡 **Nota de uso:** Esta placa está pensada para nodos finales (Clients) sencillos y/o temporales. No se recomienda su uso como Router de infraestructura pesada debido a su enfoque simplificado y la ausencia de hardware resiliente.
+> 💡 **Nota de uso:** Esta placa está pensada para nodos finales (Clients) sencillos y/o temporales. No se recomienda su uso como Router de infraestructura pesada debido a su enfoque simplificado y la ausencia de hardware resiliente. Si necesitas hardware resiliente y/o reset, te recomiendo la [Albatastic Pro](https://github.com/EmilioAL-Git/PCB-Albatastic-PRO/tree/main)
