@@ -33,9 +33,8 @@ Estos componentes son necesarios independientemente de la configuración elegida
 | **Protección Batería** | Circuito BMS 1S | 1 | [🛒 Comprar](https://es.aliexpress.com/item/1005008217119006.html) | Módulo de protección contra sobrecarga/sobredescarga |
 | **Interruptor** | Interruptor Encendido/Apagado | 1 | [🛒 Comprar](https://es.aliexpress.com/item/1005006143122311.html) | Interruptor general de encendido |
 | **Resistencias 1206** | 1x 680K 1x 1M (o 2x 1M) | 2 | [🛒 Comprar](https://es.aliexpress.com/item/1005002991902748.html) | Resistencias para monitorear el nivel de la batería |
-| **Botón reset** | Botón de reset | 1 | [🛒 Comprar](https://es.aliexpress.com/item/4001125532910.html) | Resistencias para monitorear el nivel de la batería |
-| **Baterías 18650** | Baterías 18650 | 2 | [🛒 Comprar](https://www.nkon.nl/es/) | Recomiendo usar baterías nuevas y de calidad  |
-
+| **Botón reset** | Botón de reset | 1 | [🛒 Comprar](https://es.aliexpress.com/item/4001125532910.html) | Pulsador SMD/PTH para reset |
+| **Baterías 18650** | Baterías 18650 | 2 | [🛒 Comprar](https://www.nkon.nl/es/) | Recomiendo usar baterías nuevas y de calidad |
 
 ---
 
@@ -74,15 +73,64 @@ Sigue estos pasos para seleccionar los componentes según la configuración de t
 
 ---
 
+## 🔩 Instrucciones de Montaje
+
+> ⚠️ **Advertencia importante de seguridad:** Antes de colocar las baterías o conectar un panel solar, verifica con un multímetro en modo continuidad que no existen cortocircuitos entre VCC, 3.3V, 5V y GND.
+
+Se recomienda realizar el ensamblaje siguiendo el método de empezar por dentro e ir hacia fuera:
+
+#### 1️⃣ **Paso 1: Componentes Pasivos SMD e interruptor**
+1. **Resistencias SMD (1206):** Soldar las 2 resistencias del divisor de tensión (680K y 1M, o 2x 1M según tu configuración) destinadas al monitoreo del voltaje de batería.
+2. **Control:** Soldar el **botón de reset** y el **interruptor On/Off** principal en la placa. Para soldar el interruptor, recomiendo cortarle las patas algo, darle la vuelta a la PCB, introducir el interruptor hasta que las patas se queden a ras de la cara donde van las baterías y añadir estaño. Hay que asegurarse de que se quede plano
+
+#### 2️⃣ **Paso 2: Micro Controlador** (Similiar a la Albatastic compact)
+1. **Paso previo:** Insertar la tira de pines por la cara larga a la PCB. (asegúrate de hacerlo apoyado sobre una mesa para que estos no se introduzcan para abajo). Apoyar el promicro sobre los pines
+2. **Añadir estaño:** Añade estaño a uno de los pines de la tira a cada lado y retira el promicro. Acto seguido, suelda todos los pines
+3. **Elimina el plástico de los pines:** Elimina el separador de los pines, con cuidado y valiendote de unas pinzas, alicates, etc (sin rallar la PCB OJO!!)
+4. **Suelda el promicro:** Empuja el promicro hasta el fondo y sueldalo. Corta el sobrante
+
+Si quieres poder quitar el ProMicro sin desoldar:
+4a. **Importante:** Coloca unos pines hembra sobre los pines macho ya soldados a la placa y empújalos hasta el fondo.
+5a. **Suelda el promicro:** Suelda el pro micro como en el paso 5 normal.
+
+#### 3️⃣ **Paso 3: Sensor BME280 (Opcional)**
+1. Soldar el sensor **BME280** en sus pines dedicados para mediciones de temperatura, humedad y presión.
+
+#### 4️⃣ **Paso 4: Regulador / Boost de Radio (según selección de alimentación)**
+* **E80 y RA62:** No es necesario nada, avanza al siguiente paso.
+* **Modo QRP (E28):** Si no usas módulo boost externo, suelda el selector para alimentar la radio directamente con los 3.3V del Pro Micro.
+* **Con boost (E22/E22P):** Suelda el boost a la placa directamente.
+* **Con buck-boost (E28/E22/E22P):** Suelda el buck boost a la placa y comprueba el voltaje que da. Para el E28, suelda el selector de alimentación en posición buck-boost. Para el E22/E22P, suelda el jumper para 5V
+
+#### 4️⃣ **Paso 4: Módulo de Radio y Microcontrolador**
+1. **Módulo de Radio:** Suelda la radio seleccionada (**E22P**, **E22**, **E80**, **E28** o **HT-RA62**). Suelda el selector E22/E22P según corresponda (o dejalo sin soldar si no es ninguno de estos dos)
+   * *⚠️ Nunca enciendas ni transmitas con la radio sin la antena conectada.*
+
+#### 5️⃣ **Paso 5: Controlador de carga MPPT**
+1. Suelda el controlador de carga MPPT en la posición correcta. 
+* *⚠️ OJO con la polaridad de los CN3791.*
+
+#### 6️⃣ **Paso 6: BMS y baterías**
+1. **BMS:** Suelda el BMS respetando la polaridad. Para ello es recomendable soldar este en un ángulo o con cierta separación. Un truco consiste en poner estaño en dos pads del BMS (hasta que sobresalga 2-3mm), y luego, darle la vuelta y mientras lo sujetas con unas pinzas, aplicar calor al estaño para que se funda y se una
+2. **Baterías:** Suelda el porta baterías. Inserta las baterías respetando la polaridad.
+3. **Encendido inicial:** Conecta la antena. En el primer encendido, es necesario encenderlo con el MPPT o el USB-C del pro micro, para activar el BMS
+
+---
 
 <details>
 <summary><b>📋 Historial de Cambios (Changelog)</b></summary>
 
 <br>
 
+### 🚧 v1.2 - Por testear
+* **Añadido:** Añadido otro convertidor buck-boost de 3.3/5V para el E22P/E28.
+* **Recolocado:** Recolocado el interruptor on-off.
+* **Mejora:** Mejora en estética para un mejor entendimiento.
+
+
 ### 🚧 v1.1 - Por testear
 * **Corregido:** Corregido que la salida del CN3791 no estaba conectada.
-* **Corregido:** El E28 no estaba conectado a 3.3V
+* **Corregido:** El E28 no estaba conectado a 3.3V.
 * **Añadido:** Añadido opción de buck-boost de 3.3V/5V para el E22P/E28.
 * **Añadido:** Selector de alimentación para el E28 (Pro micro para QRP, Buck-Boost para potencia máxima).
 
