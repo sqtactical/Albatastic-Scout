@@ -92,8 +92,8 @@ Se recomienda realizar el ensamblaje siguiendo el método de empezar por dentro 
 4. **Suelda el promicro:** Empuja el promicro hasta el fondo y sueldalo. Corta el sobrante
 
 ##### Si quieres poder quitar el ProMicro sin desoldar:
-4a. **Importante:** Coloca unos pines hembra sobre los pines macho ya soldados a la placa y empújalos hasta el fondo.
-5a. **Suelda el promicro:** Suelda el pro micro como en el paso 5 normal.
+4. **Importante:** Coloca unos pines hembra sobre los pines macho ya soldados a la placa y empújalos hasta el fondo.
+5. **Suelda el promicro:** Suelda el pro micro como en el paso 5 normal.
 
 #### 3️⃣ **Paso 3: Sensor BME280 (Opcional)**
 1. Soldar el sensor **BME280** en sus pines dedicados para mediciones de temperatura, humedad y presión.
