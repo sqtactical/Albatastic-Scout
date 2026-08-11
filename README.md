@@ -69,7 +69,8 @@ Sigue estos pasos para seleccionar los componentes según la configuración de t
 | **Opción A (E28)** | **Modo QRP** *(Sin regulador dedicado)* | La radio se alimenta directamente de los 3.3V del Pro Micro. Para transmisiones QRP con E28. | N/A |
 | **Opción B** | **Mini Buck-Boost 3.3V / 5V** | Opción mini para alimentar el E22/E28 a 5/3.3V respectivamente | [🛒 Comprar](https://es.aliexpress.com/item/1005011637436564.html) |
 | **Opción C (E22/E22P)** | **Boost 5V 3A** | Opción para alimentar el E22/E22P a 5V | [🛒 Comprar](https://es.aliexpress.com/item/1005007013856492.html) |
-| **Opción D (E22/E22P)** | **HW-085** | Opción mini para alimentar el E22 a 5V respectivamente | [🛒 Comprar](https://es.aliexpress.com/item/1005008051438437.html) |
+| **Opción D (E22/E22P)** | **HW-085** | Opción mini para alimentar el E22/E22P a 5V| [🛒 Comprar](https://es.aliexpress.com/item/1005008051438437.html) |
+| **Opción E (V1.2+)** | **TPS63020** | Opción mini para alimentar el E22/E28 a 5/3.3V respectivamente | [🛒 Comprar](https://es.aliexpress.com/item/1005008099216597.html) |
 
 *(Enlaces no afiliados)*
 
