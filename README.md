@@ -91,7 +91,7 @@ Se recomienda realizar el ensamblaje siguiendo el método de empezar por dentro 
 3. **Elimina el plástico de los pines:** Elimina el separador de los pines, con cuidado y valiendote de unas pinzas, alicates, etc (sin rallar la PCB OJO!!)
 4. **Suelda el promicro:** Empuja el promicro hasta el fondo y sueldalo. Corta el sobrante
 
-Si quieres poder quitar el ProMicro sin desoldar:
+##### Si quieres poder quitar el ProMicro sin desoldar:
 4a. **Importante:** Coloca unos pines hembra sobre los pines macho ya soldados a la placa y empújalos hasta el fondo.
 5a. **Suelda el promicro:** Suelda el pro micro como en el paso 5 normal.
 
