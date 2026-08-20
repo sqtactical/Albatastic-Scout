@@ -44,7 +44,6 @@ Estos componentes son necesarios independientemente de la configuración elegida
 | **Resistencias 1206** | 1x 680K 1x 1M (o 2x 1M) | 2 | [🛒 Comprar](https://es.aliexpress.com/item/1005002991902748.html) | Resistencias para monitorear el nivel de la batería |
 | **Botón reset** | Botón de reset | 1 | [🛒 Comprar](https://es.aliexpress.com/item/4001125532910.html) | Pulsador SMD/PTH para reset |
 | **Baterías 18650** | Baterías 18650 | 2 | [🛒 Comprar](https://www.nkon.nl/es/) | Recomiendo usar baterías nuevas y de calidad |
-| **BMS** | Protección de la batería | 1 | [🛒 Comprar](https://es.aliexpress.com/item/1005008217119006.html) | Ojo al respetar la polaridad |
 
 ---
 
@@ -170,7 +169,6 @@ These components are required regardless of your chosen configuration:
 | **1206 Resistors** | 1x 680K 1x 1M (or 2x 1M) | 2 | [🛒 Buy](https://es.aliexpress.com/item/1005002991902748.html) | Resistors for battery voltage monitoring |
 | **Reset Button** | Reset Push Button | 1 | [🛒 Buy](https://es.aliexpress.com/item/4001125532910.html) | SMD/PTH reset push button |
 | **18650 Batteries** | 18650 Cells | 2 | [🛒 Buy](https://www.nkon.nl/es/) | Recommended to use new, high-quality cells |
-| **BMS** | Battery Protection Board | 1 | [🛒 Buy](https://es.aliexpress.com/item/1005008217119006.html) | Pay close attention to polarity |
 
 ---
 
