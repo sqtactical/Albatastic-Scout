@@ -29,7 +29,10 @@
 
 ---
 
-### 📦 Lista de Materiales (BOM)
+<details>
+<summary><b>📦 Lista de Materiales (BOM) (Haz clic para desplegar)</b></summary>
+
+<br>
 
 #### 🔹 1. Componentes Base (Comunes para todos los montajes)
 Estos componentes son necesarios independientemente de la configuración elegida:
@@ -81,49 +84,70 @@ Sigue estos pasos para seleccionar los componentes según la configuración de t
 
 *(Enlaces no afiliados)*
 
+</details>
+
 ---
 
-### 🔩 Instrucciones de Montaje
+<details>
+<summary><b>🔩 Instrucciones de Montaje (Haz clic para desplegar)</b></summary>
+
+<br>
 
 > ⚠️ **Advertencia importante de seguridad:** Antes de colocar las baterías o conectar un panel solar, verifica con un multímetro en modo continuidad que no existen cortocircuitos entre VCC, 3.3V, 5V y GND.
 
 Se recomienda realizar el ensamblaje siguiendo el método de empezar por dentro e ir hacia fuera:
 
-#### 1️⃣ Paso 1: Componentes Pasivos SMD e interruptor
+#### 1️⃣ Paso 1: Componentes Pasivos SMD y Botón Reset
 1. **Resistencias SMD (1206):** Soldar las 2 resistencias del divisor de tensión (680K y 1M, o 2x 1M según tu configuración) destinadas al monitoreo del voltaje de batería.
-2. **Control:** Soldar el **botón de reset** y el **interruptor On/Off** principal en la placa. Para soldar el interruptor, recomiendo cortarle las patas algo, darle la vuelta a la PCB, introducir el interruptor hasta que las patas se queden a ras de la cara donde van las baterías y añadir estaño. Hay que asegurarse de que se quede plano.
+2. **Control:** Soldar el **botón de reset**.
 
-#### 2️⃣ Paso 2: Micro Controlador (Similar a la Albatastic compact)
+<img width="500" alt="Botón Reset y SMD" src="https://github.com/user-attachments/assets/a9409473-f548-42eb-82bb-4ad1ca9701d4" />
+
+#### 2️⃣ Paso 2: Micro Controlador (Similar a la Albatastic Compact)
 1. **Paso previo:** Insertar la tira de pines por la cara larga a la PCB (asegúrate de hacerlo apoyado sobre una mesa para que estos no se introduzcan para abajo). Apoyar el Pro Micro sobre los pines.
+
+<img width="500" alt="Colocación de pines" src="https://github.com/user-attachments/assets/040c51aa-8b79-4a94-864d-5560db9f15ed" />
+
 2. **Añadir estaño:** Añade estaño a uno de los pines de la tira a cada lado y retira el Pro Micro. Acto seguido, suelda todos los pines.
 3. **Elimina el plástico de los pines:** Elimina el separador de los pines con cuidado valiéndote de unas pinzas o alicates (¡ojo sin rayar la PCB!).
+
+<img width="500" alt="Eliminación del plástico" src="https://github.com/user-attachments/assets/c86b3496-590d-4df6-988b-60bc62861795" />
+
 4. **Suelda el Pro Micro:** Empuja el Pro Micro hasta el fondo y suéldalo. Corta el sobrante.
 
+<img width="500" alt="Soldadura del Pro Micro" src="https://github.com/user-attachments/assets/abfaf76c-c716-4578-8789-00339532d341" />
+
 ##### Si quieres poder quitar el ProMicro sin desoldar:
-4. **Importante:** Coloca unos pines hembra sobre los pines macho ya soldados a la placa y empújalos hasta el fondo.
-5. **Suelda el Pro Micro:** Suelda el Pro Micro como en el paso normal.
+* **Importante:** Coloca unos pines hembra sobre los pines macho ya soldados a la placa y empújalos hasta el fondo. Suelda el Pro Micro sobre los pines hembra.
 
-#### 3️⃣ Paso 3: Sensor BME280 (Opcional)
-1. Soldar el sensor **BME280** en sus pines dedicados para mediciones de temperatura, humedad y presión.
+<img width="500" alt="Opción desmontable Pro Micro" src="https://github.com/user-attachments/assets/c834e84b-9a76-411f-a737-599288a12b1c" />
 
-#### 4️⃣ Paso 4: Regulador / Boost de Radio (según selección de alimentación)
+#### 3️⃣ Paso 3: Regulador / Boost de Radio (según selección de alimentación)
 * **E80 y RA62:** No es necesario nada, avanza al siguiente paso.
 * **Modo QRP (E28):** Si no usas módulo boost externo, suelda el selector para alimentar la radio directamente con los 3.3V del Pro Micro.
 * **Con boost (E22/E22P):** Suelda el boost a la placa directamente.
 * **Con buck-boost (E28/E22/E22P):** Suelda el buck-boost a la placa y comprueba el voltaje que da. Para el E28, suelda el selector de alimentación en posición buck-boost. Para el E22/E22P, suelda el jumper para 5V.
 
-#### 5️⃣ Paso 5: Módulo de Radio
+#### 4️⃣ Paso 4: Módulo de Radio
 1. **Módulo de Radio:** Suelda la radio seleccionada (**E22P**, **E22**, **E80**, **E28** o **HT-RA62**). Suelda el selector E22/E22P según corresponda (o déjalo sin soldar si no es ninguno de estos dos).
    * *⚠️ Nunca enciendas ni transmitas con la radio sin la antena conectada.*
 
+#### 5️⃣ Paso 5: Interruptor y Sensor BME
+1. **Sensor BME280:** Soldar el sensor **BME280** en sus pines dedicados para mediciones de temperatura, humedad y presión.
+2. **Interruptor On/Off:** Soldar el **interruptor On/Off** principal en la placa. Para soldar el interruptor, recomiendo cortarle las patas un poco, darle la vuelta a la PCB, introducir el interruptor hasta que las patas se queden a ras de la cara donde van las baterías y añadir estaño. Hay que asegurarse de que se quede plano.
+
+<img width="500" alt="Interruptor y Sensor BME" src="https://github.com/user-attachments/assets/92099a40-0d97-4dfa-82c5-f6a467fbbd49" />
+
 #### 6️⃣ Paso 6: Controlador de carga MPPT
-1. Suelda el controlador de carga MPPT en la posición correcta.  
+1. Suelda el controlador de carga MPPT en la posición correcta.
    * *⚠️ OJO con la polaridad de los CN3791.*
 
-#### 7️⃣ Paso 7: BMS y baterías
+#### 7️⃣ Paso 7: BMS y Baterías
 1. **BMS:** Suelda el BMS respetando la polaridad. Para ello es recomendable soldar este en un ángulo o con cierta separación. Un truco consiste en poner estaño en dos pads del BMS (hasta que sobresalga 2-3mm), y luego, darle la vuelta y mientras lo sujetas con unas pinzas, aplicar calor al estaño para que se funda y se una.
 2. **Baterías:** Suelda el portabaterías. Inserta las baterías respetando la polaridad.
 3. **Encendido inicial:** Conecta la antena. En el primer encendido, es necesario encenderlo con el MPPT o el USB-C del Pro Micro para activar el BMS.
+
+</details>
 
 ---
 
@@ -154,7 +178,10 @@ Se recomienda realizar el ensamblaje siguiendo el método de empezar por dentro 
 
 ---
 
-### 📦 Bill of Materials (BOM)
+<details>
+<summary><b>📦 Bill of Materials (BOM) (Click to expand)</b></summary>
+
+<br>
 
 #### 🔹 1. Base Components (Common for all builds)
 These components are required regardless of your chosen configuration:
@@ -206,40 +233,59 @@ Follow these steps to choose components based on your intended node setup:
 
 *(Non-affiliated links)*
 
+</details>
+
 ---
 
-### 🔩 Assembly Instructions
+<details>
+<summary><b>🔩 Assembly Instructions (Click to expand)</b></summary>
+
+<br>
 
 > ⚠️ **Important Safety Warning:** Before inserting batteries or connecting a solar panel, use a multimeter in continuity mode to verify that there are no short circuits between VCC, 3.3V, 5V, and GND.
 
 Assembly should proceed using the "inside-out" method:
 
-#### 1️⃣ Step 1: SMD Passive Components & Power Switch
+#### 1️⃣ Step 1: SMD Passive Components & Reset Button
 1. **SMD Resistors (1206):** Solder the 2 voltage divider resistors (680K and 1M, or 2x 1M depending on configuration) used for battery monitoring.
-2. **Control:** Solder the **reset button** and the main **ON/OFF switch**. For the switch, trim the leads slightly, flip the PCB, insert until leads are flush with the battery side, and solder. Ensure it sits completely flat.
+2. **Control:** Solder the **reset push button**.
+
+<img width="500" alt="Reset Button and SMD" src="https://github.com/user-attachments/assets/a9409473-f548-42eb-82bb-4ad1ca9701d4" />
 
 #### 2️⃣ Step 2: Microcontroller (Similar to Albatastic Compact)
 1. **Preparation:** Insert header pins long-side down into the PCB resting on a flat surface. Place the Pro Micro on top.
+
+<img width="500" alt="Header pin alignment" src="https://github.com/user-attachments/assets/040c51aa-8b79-4a94-864d-5560db9f15ed" />
+
 2. **Solder Headers:** Solder one pin on each side, remove the Pro Micro, and solder all remaining pin headers to the board.
 3. **Remove Plastic Spacers:** Carefully remove the plastic pin spacer strip using pliers or tweezers (avoid scratching the PCB!).
+
+<img width="500" alt="Removing plastic spacer" src="https://github.com/user-attachments/assets/c86b3496-590d-4df6-988b-60bc62861795" />
+
 4. **Solder Pro Micro:** Push the Pro Micro all the way down onto the pins, solder, and trim excess pin length.
 
+<img width="500" alt="Soldering Pro Micro" src="https://github.com/user-attachments/assets/abfaf76c-c716-4578-8789-00339532d341" />
+
 ##### If you want a removable Pro Micro:
-4. **Alternative:** Place female headers over the male pins already soldered to the board and push them all the way down.
-5. **Solder Pro Micro:** Solder the Pro Micro onto the female headers.
+* **Alternative:** Place female headers over the male pins already soldered to the board and push them all the way down. Solder the Pro Micro onto the female headers.
 
-#### 3️⃣ Step 3: BME280 Sensor (Optional)
-1. Solder the **BME280** sensor on its dedicated pins for ambient temperature, humidity, and pressure monitoring.
+<img width="500" alt="Removable Pro Micro assembly" src="https://github.com/user-attachments/assets/c834e84b-9a76-411f-a737-599288a12b1c" />
 
-#### 4️⃣ Step 4: Radio Regulator / Boost Module
+#### 3️⃣ Step 3: Radio Regulator / Boost Module
 * **E80 & RA62:** No module required, skip to next step.
 * **QRP Mode (E28):** If not using an external boost module, solder the jumper to power the radio directly from the Pro Micro 3.3V line.
 * **With Boost (E22/E22P):** Solder the boost board directly.
 * **With Buck-Boost (E28/E22/E22P):** Solder the buck-boost board and check output voltage. For E28, set jumper selector to buck-boost position. For E22/E22P, set jumper for 5V output.
 
-#### 5️⃣ Step 5: Radio Module
+#### 4️⃣ Step 4: Radio Module
 1. **Radio Module:** Solder the selected radio module (**E22P**, **E22**, **E80**, **E28**, or **HT-RA62**). Solder the E22/E22P selector jumper if applicable.
    * *⚠️ Never turn on or transmit with the radio without an antenna attached.*
+
+#### 5️⃣ Step 5: Power Switch & BME280 Sensor
+1. **BME280 Sensor:** Solder the **BME280** sensor on its dedicated pins for ambient temperature, humidity, and pressure monitoring.
+2. **Power Switch:** Solder the main **ON/OFF switch**. For the switch, trim the leads slightly, flip the PCB, insert until leads are flush with the battery side, and solder. Ensure it sits completely flat.
+
+<img width="500" alt="Power Switch and BME Sensor" src="https://github.com/user-attachments/assets/92099a40-0d97-4dfa-82c5-f6a467fbbd49" />
 
 #### 6️⃣ Step 6: MPPT Solar Charger Controller
 1. Solder the MPPT charge controller module in the correct orientation.  
@@ -249,6 +295,8 @@ Assembly should proceed using the "inside-out" method:
 1. **BMS:** Solder the BMS respecting polarity. A good trick is pre-tinning two pads on the BMS (2-3mm solder blob), flipping it over while holding with tweezers, and applying heat to melt and fuse the connection.
 2. **Batteries:** Solder the battery holder. Insert 18650 batteries strictly observing polarity.
 3. **Initial Power-On:** Attach antenna. On first boot, power must be applied via MPPT or Pro Micro USB-C to wake up and activate the BMS.
+
+</details>
 
 ---
 
