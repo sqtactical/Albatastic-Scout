@@ -78,7 +78,7 @@ Sigue estos pasos para seleccionar los componentes según la configuración de t
 | :--- | :--- | :--- | :---: |
 | **Opción A (E28)** | **Modo QRP** *(Sin regulador dedicado)* | La radio se alimenta directamente de los 3.3V del Pro Micro. Para transmisiones QRP con E28. | N/A |
 | **Opción B** | **Mini Buck-Boost 3.3V / 5V** | Opción mini para alimentar el E22/E28 a 5/3.3V respectivamente | [🛒 Comprar](https://es.aliexpress.com/item/1005011637436564.html) |
-| **Opción C (E22/E22P)** | **Boost 5V 3A** | Opción para alimentar el E22/E22P a 5V | [🛒 Comprar](https://es.aliexpress.com/item/1005007013856492.html) |
+| **Opción C (E22/E22P)** | **Boost 5V 3A** | Opción para alimentar el E22/E22P a 5V | [🛒 Comprar](https://es.aliexpress.com/item/1005008051438437.html) |
 | **Opción D (E22/E22P)** | **HW-085** | Opción mini para alimentar el E22/E22P a 5V | [🛒 Comprar](https://es.aliexpress.com/item/1005007013856492.html) |
 | **Opción E (V1.2+)** | **TPS63020** | Opción mini para alimentar el E22/E28 a 5/3.3V respectivamente | [🛒 Comprar](https://es.aliexpress.com/item/1005008099216597.html) |
 
@@ -227,7 +227,7 @@ Follow these steps to choose components based on your intended node setup:
 | :--- | :--- | :--- | :---: |
 | **Option A (E28)** | **QRP Mode** *(No dedicated regulator)* | The radio is powered directly from the Pro Micro 3.3V rail. For QRP transmission with E28. | N/A |
 | **Option B** | **Mini Buck-Boost 3.3V / 5V** | Compact option to power E22/E28 at 5V/3.3V respectively | [🛒 Buy](https://es.aliexpress.com/item/1005011637436564.html) |
-| **Option C (E22/E22P)** | **Boost 5V 3A** | Power module to supply 5V to E22/E22P | [🛒 Buy](https://es.aliexpress.com/item/1005007013856492.html) |
+| **Option C (E22/E22P)** | **Boost 5V 3A** | Power module to supply 5V to E22/E22P | [🛒 Buy](https://es.aliexpress.com/item/1005008051438437.html) |
 | **Option D (E22/E22P)** | **HW-085** | Mini boost option to power E22/E22P at 5V | [🛒 Buy](https://es.aliexpress.com/item/1005007013856492.html) |
 | **Option E (V1.2+)** | **TPS63020** | Mini option to power E22/E28 at 5V/3.3V respectively | [🛒 Buy](https://es.aliexpress.com/item/1005008099216597.html) |
 
