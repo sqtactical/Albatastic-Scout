@@ -311,7 +311,10 @@ Assembly should proceed using the "inside-out" method:
 
 <br>
 
-### 🚧 v1.2 - Por testear / Untested
+### 🚧 v1.2.1 - Por testear / Untested
+* **Corregido/Corrected:** Corregido problema de conexión que impide el uso del HT RA62
+
+### 🟢 v1.2 - Testeada
 * **Añadido / Added:** Convertidor buck-boost de 3.3/5V adicional para el E22P/E28 / Additional 3.3V/5V buck-boost converter for E22P/E28.
 * **Recolocado / Repositioned:** Interruptor ON/OFF / ON/OFF switch.
 * **Mejora / Improvement:** Mejora estética para mejor legibilidad / Visual and legibility improvements.
@@ -322,7 +325,7 @@ Assembly should proceed using the "inside-out" method:
 * **Añadido / Added:** Opción de buck-boost de 3.3V/5V para E22P/E28 / 3.3V/5V buck-boost option for E22P/E28.
 * **Añadido / Added:** Selector de alimentación para el E28 (Pro Micro para QRP, Buck-Boost para máxima potencia) / Power selector for E28 (Pro Micro QRP vs Buck-Boost full power).
 
-### 🟢 v1.0 (Inicial / Initial) - Testeando / Testing
+### 🟢 v1.0 (Inicial / Initial) - Testeada
 * **Diseño / Design:** Versión inicial de PCB *barebones* para nodos cliente / Initial barebones PCB version for client nodes.
 * **Energía / Power:** Integración de soporte para doble batería 18650 y BMS / Dual 18650 battery holder & BMS support.
 * **Radio:** Soporte multi-módulo (E22/E22P, E80, E28, HT-RA62) / Multi-module support (E22/E22P, E80, E28, HT-RA62).
